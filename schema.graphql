@@ -1,0 +1,13 @@
+type ExampleEntity @entity {
+  id: ID!
+  count: BigInt!
+  owner: Bytes! # address
+  approved: Bytes! # address
+}
+
+type GobbledNFTInfo @entity {
+  id: ID!
+  nft: Bytes!
+  nftId: BigInt!
+  gobblerId: BigInt!
+}
